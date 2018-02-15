@@ -6,6 +6,6 @@ class Post
   end
 
   def author_name
-    self.include?(author) ? self.author.name : nil
+    self.author.nil? ? self.author.name : nil
   end
 end
